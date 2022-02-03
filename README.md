@@ -1,2 +1,2 @@
 # csszengarden
-# by Austin Jacobs
+# by Austin Jacobs, Emmanuel, Aaron

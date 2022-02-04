@@ -1,5 +1,3 @@
-/* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat&family=Raleway&display=swap');
 
 @import 'partials/reset';
 @import 'partials/prefix-mixins';
@@ -185,13 +183,19 @@ section > h2::before {
 }
 
 p {
+
   font-size: 1.4rem;
   line-height: 1.4;
   color: lighten($color-2, 25%);
+  font-family: $secondary-font;
 
   a {
-    color: $color-1;
+    color: $color-6;
     text-decoration: underline;
+    &:hover {
+      color:$color-2;
+      //font-family: $tertiary-font;
+  }
   }
 
   @include MQ(S) {
@@ -199,6 +203,7 @@ p {
     line-height: 1.6;
   }
 }
+
 
 /* -------------------------------- 
 

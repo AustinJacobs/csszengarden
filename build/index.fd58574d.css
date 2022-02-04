@@ -1,5 +1,3 @@
-/* Import fonts */
-@import url("https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat&family=Raleway&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -198,10 +196,14 @@ p {
   font-size: 1.4rem;
   line-height: 1.4;
   color: #37baff;
+  font-family: "Esteban", serif;
 }
 p a {
-  color: #e1ecf7;
+  color: #FF6D00;
   text-decoration: underline;
+}
+p a:hover {
+  color: #0077B6;
 }
 @media only screen and (min-width: 768px) {
   p {

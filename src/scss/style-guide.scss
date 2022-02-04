@@ -5,11 +5,6 @@
 // color palette - these colors will be the color swatches of the Colors section
 @import 'partials/colors';
 
-// additional colors
-
-$success: #6fce72; // green
-$alert: $color-3; // red
-
 // fonts
 $primary-font: 'Montserrat', sans-serif;
 $secondary-font: 'Esteban', serif;
@@ -34,7 +29,7 @@ xPatterns
 
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid $color-4;
+  border: 1px solid $color-6;
   border-radius: 3px;
   background: $color-5;
   box-shadow: 0 1px 1px rgba(#000, 0.05);
@@ -48,7 +43,7 @@ xNavigation
 -------------------------------- */
 
 header {
-  background-color: $color-2;
+  background-color: $color-4;
 }
 
 .cd-logo {
@@ -63,7 +58,7 @@ header {
 
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
-  background: $color-2;
+  background: $color-4;
 
   li a {
     color: $color-5;
@@ -110,10 +105,10 @@ header {
 
 .cd-download {
   /* download button top-right visible on big devices */
-  background-color: lighten($color-2, 10%);
+  background-color: lighten($color-5, 10%);
 
   .no-touch &:hover {
-    background-color: lighten($color-2, 15%);
+    background-color: lighten($color-6, 15%);
   }
 
   span {
@@ -139,7 +134,7 @@ main > h1 {
 
   @include MQ(L) {
     /* title goes into the header on big devices */
-    color: $color-5;
+    color: $color-2;
   }
 }
 
@@ -151,7 +146,7 @@ xTypography
 
 h1,
 h2 {
-  font-family: $secondary-font;
+  font-family: $primary-font;
   color: $color-2;
 }
 
@@ -214,9 +209,9 @@ xButtons
   border-radius: 0.25em;
   font: {
     size: 1.4rem;
-    family: $secondary-font;
+    family: $tertiary-font;
   }
-  color: $color-5;
+  color: $color-7;
   padding: 0.6em 2.2em;
   cursor: pointer;
   background: $color-1;
@@ -227,22 +222,6 @@ xButtons
 
   .no-touch &:hover {
     background: lighten($color-1, 5%);
-  }
-
-  &.btn-success {
-    background: $success;
-
-    .no-touch &:hover {
-      background: lighten($success, 5%);
-    }
-  }
-
-  &.btn-alert {
-    background: $alert;
-
-    .no-touch &:hover {
-      background: lighten($alert, 5%);
-    }
   }
 
   &.btn-outline {
@@ -298,16 +277,6 @@ select {
 input[type='text'] {
   padding: 0.6em 1em;
   box-shadow: inset 1px 1px rgba(#000, 0.03);
-
-  &.success {
-    border-color: $success;
-    box-shadow: 0 0 6px rgba($success, 0.2);
-  }
-
-  &.alert {
-    border-color: $alert;
-    box-shadow: 0 0 6px rgba($alert, 0.2);
-  }
 
   &:focus {
     border-color: $color-1;

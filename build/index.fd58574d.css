@@ -196,10 +196,14 @@ p {
   font-size: 1.4rem;
   line-height: 1.4;
   color: #37baff;
+  font-family: "Esteban", serif;
 }
 p a {
-  color: #e1ecf7;
+  color: #FF6D00;
   text-decoration: underline;
+}
+p a:hover {
+  color: #0077B6;
 }
 @media only screen and (min-width: 768px) {
   p {

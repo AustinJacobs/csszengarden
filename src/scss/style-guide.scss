@@ -1,3 +1,4 @@
+
 @import 'partials/reset';
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
@@ -182,20 +183,28 @@ section > h2::before {
 }
 
 p {
+
   font-size: 1.4rem;
   line-height: 1.4;
   color: lighten($color-2, 25%);
+  font-family: $secondary-font;
 
   a {
-    color: $color-1;
+    color: $color-6;
     text-decoration: underline;
+    &:hover {
+      color:$color-2;
+      //font-family: $tertiary-font;
+  }
   }
 
+ 
   @include MQ(S) {
     font-size: 1.6rem;
     line-height: 1.6;
   }
 }
+
 
 /* -------------------------------- 
 
